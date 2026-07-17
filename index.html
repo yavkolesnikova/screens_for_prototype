@@ -492,7 +492,7 @@
     width:100%;
     border:1px solid var(--border);
     border-radius:14px;
-    padding:18px;
+    padding:24px;
   }
   @media (max-width:700px){
     .forms-cards{ grid-template-columns:1fr; }
@@ -501,7 +501,7 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-    margin-bottom:14px;
+    margin-bottom:24px;
   }
   .badge{
     font-size:12px;
@@ -543,13 +543,13 @@
   .form-card-title{
     font-size:16px;
     font-weight:600;
-    margin:0 0 12px 0;
+    margin:0 0 20px 0;
   }
   .form-card-meta{
     display:flex;
     flex-direction:column;
-    gap:8px;
-    margin-bottom:16px;
+    gap:16px;
+    margin-bottom:24px;
   }
   .meta-row{
     display:flex;
@@ -569,10 +569,13 @@
   .url-box{
     flex:1 1 auto;
     min-width:0;
+    height:48px;
+    display:flex;
+    align-items:center;
     background:#F5F6F7;
     border:1px solid var(--border);
     border-radius:10px;
-    padding:9px 12px;
+    padding:0 12px;
     font-size:13px;
     color:var(--muted);
     overflow:hidden;
@@ -580,6 +583,8 @@
     text-overflow:ellipsis;
   }
   body.dark .url-box{ background:#1E2026; }
+  .form-card-link-row .btn{ height:48px; }
+  .form-card-link-row .btn-icon-only{ width:48px; padding:0; justify-content:center; }
 
   /* Paused / scheduled records: period/duration/link/copy are disabled per spec */
   .form-card.status-paused .meta-row b,
